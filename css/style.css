@@ -52,8 +52,8 @@ footer .container{
 }
 
 footer a{
-  padding:5px 10px;
-  font-size: 13px;
+  padding-right: 20px;
+  font-size: 12px;
 }
 
 footer select{
