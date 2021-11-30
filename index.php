@@ -1,4 +1,28 @@
 <?php
+
+$headerContent = [
+  [
+    "text" => "Introduzione",
+    "link" => "https://policies.google.com"
+  ],
+  [
+    "text" => "Norme sulla privacy",
+    "link" => "https://policies.google.com/privacy"
+  ],
+  [
+    "text" => "Termini di servizio",
+    "link" => "https://policies.google.com/terms"
+  ],
+  [
+    "text" => "Tecnologie",
+    "link" => "https://policies.google.com/tecnologies"
+  ],
+  [
+    "text" => "Domande frequenti",
+    "link" => "https://policies.google.com/faq"
+  ],
+];
+
 $content = [
   [
     "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -80,11 +104,13 @@ $content = [
     </a>
     <nav>
       <ul>
-        <li><a href="#">Introduzione</a></li>
-        <li><a href="#">Norme sulla Privacy</a></li>
-        <li><a href="#">Termini di servizio</a></li>
-        <li><a href="#">Tecnologie</a></li>
-        <li><a href="#">Domande frequenti</a></li>
+        <?php
+        foreach ($headerContent as $navItem) {
+          $text = $navItem["text"];
+          $link = $navItem["link"];
+          echo "<li><a href='$link'>$text</a></li>";
+        }
+        ?>
       </ul>
     </nav>
   </header>
