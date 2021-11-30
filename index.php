@@ -91,9 +91,16 @@ var_dump($content);
       <?php
       foreach ($content as $section) {
         $title = $section["title"];
+        $paragraphs = $section["paragraphs"];
 
         echo "<section>";
         echo "<h3>$title</h3>";
+
+        foreach ($paragraphs as $paragraph) {
+          echo "<p>$paragraph</p>";
+        }
+        if (isset($section["subtitle"]))
+          echo "<h4>" . $section["subtitle"] . "</h4>";
         echo "</section>";
       }
       ?>
