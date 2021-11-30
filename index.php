@@ -1,3 +1,10 @@
+<?php
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="it">
 
@@ -13,6 +20,7 @@
 </head>
 
 <body>
+  <!-- Logo and nav -->
   <header>
     <a href="#">
       <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo">
@@ -28,6 +36,30 @@
       </ul>
     </nav>
   </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <!--Footer Links -->
+      <ul>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Tutto su Google</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Termini</a></li>
+      </ul>
+
+      <!--Language select -->
+      <select name="language">
+        <option value="">Italiano</option>
+        <option value="">English</option>
+        <option value="">French</option>
+      </select>
+    </div>
+  </footer>
 </body>
 
 </html>

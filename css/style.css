@@ -8,12 +8,15 @@ header>a{
   font-size:22px;
 }
 
-header a{
+header a, footer a{
   text-decoration: none;
+}
+
+header a{
   font-weight: 500;
 }
 
-header a , header a:hover{
+header a , header a:hover, footer a, footer a:hover{
   color:rgb(112, 107, 107);
 }
 
@@ -21,11 +24,11 @@ nav{
   margin-top:20px;
 }
 
-nav ul {
-  list-style-type: none;
+nav ul, footer ul {
   padding-inline-start: 0;
   margin-bottom:0;
   display: flex;
+  list-style-type: none;
 }
 
 nav li{
@@ -35,4 +38,24 @@ nav li{
 
 nav a{
   padding:10px 0
+}
+
+footer{
+  background-color: lightgray;
+  padding: 10px;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  padding:5px 10px;
+  font-size: 13px;
+}
+
+footer select{
+  width: 200px;
 }
