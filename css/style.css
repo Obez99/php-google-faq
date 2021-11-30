@@ -1,9 +1,38 @@
-header>a{
-  font-size: 23px;
-  text-decoration: none;
-  color:gray;
+header{
+  border-bottom: 1px solid lightgray;
+  padding: 0 20px;
+  padding-top:20px;
 }
 
-header>a:hover{
-  color:gray;
+header>a{
+  font-size:22px;
+}
+
+header a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header a , header a:hover{
+  color:rgb(112, 107, 107);
+}
+
+nav{
+  margin-top:20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-bottom:0;
+  display: flex;
+}
+
+nav li{
+  margin-right: 35px;
+  padding-bottom:10px
+}
+
+nav a{
+  padding:10px 0
 }

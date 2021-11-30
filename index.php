@@ -18,7 +18,15 @@
       <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo">
       Privacy e termini
     </a>
-    <nav></nav>
+    <nav>
+      <ul>
+        <li><a href="#">Introduzione</a></li>
+        <li><a href="#">Norme sulla Privacy</a></li>
+        <li><a href="#">Termini di servizio</a></li>
+        <li><a href="#">Tecnologie</a></li>
+        <li><a href="#">Domande frequenti</a></li>
+      </ul>
+    </nav>
   </header>
 </body>
 
