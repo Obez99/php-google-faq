@@ -23,7 +23,7 @@ $headerContent = [
   ],
 ];
 
-$content = [
+$mainContent = [
   [
     "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
     "paragraphs" => [
@@ -74,6 +74,25 @@ $content = [
   ],
 ];
 
+$footerContent = [
+  [
+    "text" => "Google",
+    "link" => "https://www.google.com"
+  ],
+  [
+    "text" => "Tutto su Google",
+    "link" => "https://about.google"
+  ],
+  [
+    "text" => "Privacy",
+    "link" => "https://policies.google.com/privacy"
+  ],
+  [
+    "text" => "Termini",
+    "link" => "https://policies.google.com/terms"
+  ],
+];
+
 ?>
 
 
@@ -118,7 +137,7 @@ $content = [
   <main>
     <div class="container">
       <?php
-      foreach ($content as $section) {
+      foreach ($mainContent as $section) {
         $title = $section["title"];
         $paragraphs = $section["paragraphs"];
 
@@ -147,10 +166,14 @@ $content = [
 
       <!--Footer Links -->
       <ul>
-        <li><a href="#">Google</a></li>
-        <li><a href="#">Tutto su Google</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Termini</a></li>
+        <?php
+        foreach ($footerContent as $footerItem) {
+          $text = $footerItem["text"];
+          $link = $footerItem["link"];
+
+          echo "<li><a href='$link'>$text</a></li>";
+        }
+        ?>
       </ul>
 
       <!--Language select -->
