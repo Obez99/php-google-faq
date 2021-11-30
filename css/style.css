@@ -1,0 +1,9 @@
+header>a{
+  font-size: 23px;
+  text-decoration: none;
+  color:gray;
+}
+
+header>a:hover{
+  color:gray;
+}
